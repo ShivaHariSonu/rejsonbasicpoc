@@ -17,8 +17,7 @@ public class RedisConfig {
     @Bean
     public Config config() {
         Config config = new Config();
-        config.useSingleServer()
-                .setAddress(redisURL);
+        config.useSingleServer().setAddress(redisURL);
         return config;
     }
 
